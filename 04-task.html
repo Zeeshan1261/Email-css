@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task</title>
+</head>
+<style>
+.container{
+display:flex;
+position: relative;
+margin-top: 5em;
+margin-left: 20em;
+}
+.turn-left{
+font-size: 2px;
+position: absolute;
+top: 6.5em;
+left: -3em ;
+font-size: 10px;
+width: 50px;
+color: green;
+background-color: #fff;
+border-radius: 20px solid green;
+border-color: green;
+border-radius: 50%;
+cursor: pointer;
+}
+.turn-right{
+width: 2px;
+font-size: 10px;
+width: 50px;
+position: absolute;
+top: 6.5em;
+left: 66em;
+color: green;
+background-color: #fff;
+border-color: green;
+border-radius: 50%;
+cursor: pointer;
+}
+.buttons{
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 5px;
+padding-right: 5px;
+margin-top: 5em;
+margin-left: 3em;
+margin-right: 1em;
+border: none;
+background-color: white;
+border-radius: 20px ;
+width: 22px;
+}
+.btn3{
+background-color: green;
+color: white;
+border-radius: 30px;
+width: 40px;
+}
+.container-buttons{
+cursor: pointer;
+}
+
+</style>
+<body>
+<div class="container">
+<button class="turn-left">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="left">
+<path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+</svg>
+</button>
+
+<div class="container-buttons">
+<button class="buttons">1</button>
+<button class="buttons">2</button>
+<button class="buttons btn3">3</button>
+<button class="buttons">4</button>
+<button class="buttons">5</button>
+<button class="buttons">6</button>
+<button class="buttons">...</button>
+<button class="buttons">23</button>
+</div>
+
+<button class="turn-right">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="right">
+<path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+</svg>
+</button>
+</div>
+</body>
+</html>
